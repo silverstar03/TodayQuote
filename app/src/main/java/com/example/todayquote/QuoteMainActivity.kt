@@ -25,9 +25,13 @@ class QuoteMainActivity : AppCompatActivity() {
         val initialized = pref.getBoolean("initialized", false)
         if(!initialized) {
             // ...
-            Quote.saveToPreference(pref, 0, "대충 명언", "유명한 사람")
-            Quote.saveToPreference(pref, 1, "착하게 살자", "착한 사람")
-            Quote.saveToPreference(pref, 2, "피곤하다")
+            Quote.saveToPreference(pref, 0, "삶이 있는 한 희망은 있다.", "키케로")
+            Quote.saveToPreference(pref, 1, "산다는 것 그것은 치열한 전투이다.", "로망로망")
+            Quote.saveToPreference(pref, 2, "피할 수 없으면 즐겨라", "로버트 엘리엇")
+            Quote.saveToPreference(pref, 2,
+                "어리석은 자는 멀리서 행복을 찾고, 현명한 자는 자신의 발치에서 행복을 키워간다.",
+                "제임스 오펜하임")
+            
 
             val editor = pref.edit()
             editor.putBoolean("initialized", true)
